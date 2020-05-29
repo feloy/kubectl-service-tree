@@ -6,7 +6,7 @@ A `kubectl` plugin to explore ingresses and services and their associated backen
 
 ```shell
 # Install plugin
-$ kubectl krew install services
+$ make bin && sudo cp bin/kubectl-services /usr/local/bin/
 
 # Get help
 $ kubectl services --help
