@@ -1,10 +1,10 @@
-project_name: {{ .PluginName }}
+project_name: kubectl-services
 release:
   github:
-    owner: {{ .Owner }}
-    name: {{ .Repo }}
+    owner: feloy
+    name: kubectl-services
 builds:
-  - id: {{ .PluginName }}
+  - id: kubectl-services
     goos:
     - linux
     - windows
@@ -17,12 +17,12 @@ builds:
       - GO111MODULE=on
     main: cmd/plugin/main.go
     ldflags: -s -w
-      -X github.com/{{ .Owner }}/{{ .Repo }}/pkg/version.version=
+      -X github.com/feloy/kubectl-services/pkg/version.version=
 archives:
-  - id: {{ .PluginName }}
+  - id: kubectl-services
     builds:
-    - {{ .PluginName }}
-    name_template: {{ `"{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"` }}
+    - kubectl-services
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
     format_overrides:
     - goos: windows
       format: zip
