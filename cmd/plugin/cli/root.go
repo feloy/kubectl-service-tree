@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/feloy/kubectl-services/pkg/plugin"
+	"github.com/feloy/kubectl-service-tree/pkg/plugin"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -18,7 +18,7 @@ var (
 
 func RootCmd() *cobra.Command {
 	cmd := &cobra.Command{
-		Use:           "kubectl-services",
+		Use:           "kubectl-service-tree",
 		Short:         "",
 		Long:          `.`,
 		SilenceErrors: true,

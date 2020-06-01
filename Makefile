@@ -7,7 +7,7 @@ test:
 
 .PHONY: bin
 bin: fmt vet
-	go build -o bin/kubectl-services github.com/feloy/kubectl-services/cmd/plugin
+	go build -o bin/kubectl-service-tree github.com/feloy/kubectl-service-tree/cmd/plugin
 
 .PHONY: fmt
 fmt:

@@ -1,22 +1,26 @@
 
 ## Usage
+
 The following assumes you have the plugin installed via
 
 ```shell
-kubectl krew install kubectl-services
+kubectl krew install service-tree
 ```
 
-### Scan images in your current kubecontext
+### Show ingresses, services and backends in current namespace
 
 ```shell
-kubectl kubectl-services
+kubectl service-tree
 ```
 
-### Scan images in another kubecontext
+### Show ingresses, services and backends in `demo` namespace
 
 ```shell
-kubectl kubectl-services --context=context-name
+kubectl service-tree -n demo
 ```
 
-## How it works
-Write a brief description of your plugin here.
+## Notes
+
+- Only services of type `NodePort` and `LoadBalancer` are displayed.
+
+- When a Pod contains several containers and the containers declare their ports (with `ports.containerPort`), the name of the concerned container is displayed.

@@ -1,18 +1,18 @@
-# kubectl services
+# kubectl service-tree
 
-A `kubectl` plugin to explore ingresses and services and their associated backends.
+A `kubectl` plugin to explore the status for ingresses, services and their backends.
 
 ## Quick Start
 
 ```shell
 # Install plugin
-$ make bin && sudo cp bin/kubectl-services /usr/local/bin/
+$ make bin && sudo cp bin/kubectl-service-tree /usr/local/bin/
 
 # Get help
-$ kubectl services --help
+$ kubectl service-tree --help
 
-# Show ingresses and servies in `myapp` namespace
-$ kubectl services -n demo
+# Show ingresses, services and backends in `myapp` namespace
+$ kubectl service-tree -n demo
 Ingress demo.router (*/apache)
  Service demo.apache-service (3000)
  . Pod demo.apache-deployment-6f6846564b-dqp5c (172.18.0.6:80)
