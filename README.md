@@ -6,7 +6,7 @@ A `kubectl` plugin to explore the status for ingresses, services and their backe
 
 ```shell
 # Install plugin
-$ make bin && sudo cp bin/kubectl-service-tree /usr/local/bin/
+$ kubectl krew install service-tree
 
 # Get help
 $ kubectl service-tree --help
@@ -21,13 +21,13 @@ Ingress demo.router (*/apache)
 Ingress demo.router (*/nginx)
  Service demo.nginx-service (8080)
  . Pod demo.nginx-deployment-b486cddf6-x2wz4 (172.18.0.9:80)
-    Container nginx 
- x Pod demo.nginx-not-ready-deployment-55999bd676-b4mhk 
+    Container nginx
+ x Pod demo.nginx-not-ready-deployment-55999bd676-b4mhk
 
 Service demo.lb-service (6060)
 . Pod demo.nginx-deployment-b486cddf6-x2wz4 (172.18.0.9:80)
-   Container nginx 
-x Pod demo.nginx-not-ready-deployment-55999bd676-b4mhk 
+   Container nginx
+x Pod demo.nginx-not-ready-deployment-55999bd676-b4mhk
 
 Service demo.nodeport-service (3030)
 . Pod demo.apache-deployment-6f6846564b-dqp5c (172.18.0.6:80)

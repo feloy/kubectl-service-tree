@@ -3,7 +3,7 @@ kind: Plugin
 metadata:
   name: service-tree
 spec:
-  version: v0.2.0
+  version: v0.2.1
   homepage: https://github.com/feloy/kubectl-service-tree
   shortDescription: Status for ingresses, services, and their backends
   description: |
@@ -17,20 +17,17 @@ spec:
       matchLabels:
         os: darwin
         arch: amd64
-    uri: https://github.com/feloy/kubectl-services/releases/download/v0.1.2/kubectl-services_darwin_amd64.tar.gz
-    sha256: bedab730a230de999581fbc05ea85208b92f902c26cfa43a1992d45b9d9124ab
-    bin: kubectl-services
+    uri: https://github.com/feloy/kubectl-service-tree/releases/download/v0.2.1/kubectl-service-tree_darwin_amd64.tar.gz
+    bin: kubectl-service-tree
   - selector:
       matchLabels:
         os: linux
         arch: amd64
-    uri: https://github.com/feloy/kubectl-services/releases/download/v0.1.2/kubectl-services_linux_amd64.tar.gz
-    sha256: 2150e1d9258993c3176132369990449d29173498617c183dc9b571f578fab990
-    bin: kubectl-services
+    uri: https://github.com/feloy/kubectl-service-tree/releases/download/v0.2.1/kubectl-service-tree_linux_amd64.tar.gz
+    bin: kubectl-service-tree
   - selector:
       matchLabels:
         os: windows
         arch: amd64
-    uri: https://github.com/feloy/kubectl-services/releases/download/v0.1.2/kubectl-services_windows_amd64.zip
-    sha256: a0efe93394ada5b4fca3777c97d32ca4f5d80ca3e74d24a49a03c551c9f2aefd
-    bin: kubectl-services.exe
+    uri: https://github.com/feloy/kubectl-service-tree/releases/download/v0.2.1/kubectl-service-tree_windows_amd64.zip
+    bin: kubectl-service-tree.exe

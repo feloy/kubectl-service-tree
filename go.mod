@@ -6,7 +6,6 @@ require (
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/docker/docker v1.13.1
 	github.com/fatih/color v1.7.0
-	github.com/feloy/kubectl-services v0.1.2 // indirect
 	github.com/genuinetools/reg v0.16.0
 	github.com/gin-gonic/gin v1.4.0
 	github.com/gizak/termui/v3 v3.1.0
